@@ -1,4 +1,4 @@
-fetch('https://ghibliapi.herokuapp.com/film')
+fetch('https://ghibliapi.herokuapp.com/films')
     .then((response) => {
         response.json().then((data) => { 
             data.forEach(movie => {
@@ -19,6 +19,8 @@ fetch('https://ghibliapi.herokuapp.com/film')
 //     data.forEach(movie => {
 //         console.log(movie.title);
 //     })
-// }
+// } else {
+// console.log('error')
+//}
 
 // request.send();
