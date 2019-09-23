@@ -1,10 +1,11 @@
-fetch('https://ghibliapi.herokuapp.com/films')
+fetch('https://ghibliapi.herokuapp.com/film')
     .then((response) => {
         response.json().then((data) => { 
             data.forEach(movie => {
                 console.log(movie.title);
             })
-        });
+        })
+        .catch((err) => console.log(err));
     });
 
 
